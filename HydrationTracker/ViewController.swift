@@ -104,12 +104,24 @@ extension MainViewController {
         content.body = "Don't forget to drink water and stay hydrated."
         content.sound = UNNotificationSound.default
         
+        // Create a trigger to fire every minutes
+//         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        
         var dateComponents = DateComponents()
-        dateComponents.hour = 0
+        dateComponents.hour = 9
+        dateComponents.minute = 0
+        
+//         Create a calendar trigger that repeats daily at 9 AM
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request)
+        let request = UNNotificationRequest(identifier: "hydrationReminder", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Failed to add notification request: \(error)")
+            } else {
+                print("Hydration reminder scheduled successfully")
+            }
+        }
     }
 }
 
@@ -171,3 +183,5 @@ extension MainViewController: UITableViewDelegate {
         present(alert, animated: true)
     }
 }
+
+
