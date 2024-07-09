@@ -14,6 +14,10 @@
 		E277D7FE2C3C3D8F00F90615 /* HydrationTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E277D7FC2C3C3D8F00F90615 /* HydrationTracker.xcdatamodeld */; };
 		E277D8002C3C3D9100F90615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E277D7FF2C3C3D9100F90615 /* Assets.xcassets */; };
 		E277D8032C3C3D9100F90615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E277D8012C3C3D9100F90615 /* LaunchScreen.storyboard */; };
+		E277D8142C3C453300F90615 /* WaterLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277D8122C3C453300F90615 /* WaterLogTableViewCell.swift */; };
+		E277D8152C3C453300F90615 /* WaterLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E277D8132C3C453300F90615 /* WaterLogTableViewCell.xib */; };
+		E277D8182C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277D8162C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.swift */; };
+		E277D8192C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E277D8172C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		E277D7FF2C3C3D9100F90615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E277D8022C3C3D9100F90615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E277D8042C3C3D9100F90615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E277D8122C3C453300F90615 /* WaterLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLogTableViewCell.swift; sourceTree = "<group>"; };
+		E277D8132C3C453300F90615 /* WaterLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterLogTableViewCell.xib; sourceTree = "<group>"; };
+		E277D8162C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWaterRecordTableViewCell.swift; sourceTree = "<group>"; };
+		E277D8172C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyWaterRecordTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		E277D7F22C3C3D8F00F90615 /* HydrationTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E277D80E2C3C44DE00F90615 /* Views */,
+				E277D80A2C3C3E1A00F90615 /* Model */,
 				E277D7F32C3C3D8F00F90615 /* AppDelegate.swift */,
 				E277D7F52C3C3D8F00F90615 /* SceneDelegate.swift */,
 				E277D7F72C3C3D8F00F90615 /* ViewController.swift */,
@@ -68,6 +78,32 @@
 				E277D7FC2C3C3D8F00F90615 /* HydrationTracker.xcdatamodeld */,
 			);
 			path = HydrationTracker;
+			sourceTree = "<group>";
+		};
+		E277D80A2C3C3E1A00F90615 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E277D80E2C3C44DE00F90615 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E277D80F2C3C44E700F90615 /* TableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E277D80F2C3C44E700F90615 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E277D8122C3C453300F90615 /* WaterLogTableViewCell.swift */,
+				E277D8132C3C453300F90615 /* WaterLogTableViewCell.xib */,
+				E277D8162C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.swift */,
+				E277D8172C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +166,8 @@
 			files = (
 				E277D8032C3C3D9100F90615 /* LaunchScreen.storyboard in Resources */,
 				E277D8002C3C3D9100F90615 /* Assets.xcassets in Resources */,
+				E277D8192C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.xib in Resources */,
+				E277D8152C3C453300F90615 /* WaterLogTableViewCell.xib in Resources */,
 				E277D7FB2C3C3D8F00F90615 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +182,8 @@
 				E277D7F82C3C3D8F00F90615 /* ViewController.swift in Sources */,
 				E277D7F42C3C3D8F00F90615 /* AppDelegate.swift in Sources */,
 				E277D7F62C3C3D8F00F90615 /* SceneDelegate.swift in Sources */,
+				E277D8182C3C4DB700F90615 /* EmptyWaterRecordTableViewCell.swift in Sources */,
+				E277D8142C3C453300F90615 /* WaterLogTableViewCell.swift in Sources */,
 				E277D7FE2C3C3D8F00F90615 /* HydrationTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
